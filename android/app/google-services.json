@@ -1,0 +1,109 @@
+{
+  "project_info": {
+    "project_number": "58189084231",
+    "firebase_url": "https://ga-bot-9f42b.firebaseio.com",
+    "project_id": "ga-bot-9f42b",
+    "storage_bucket": "ga-bot-9f42b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58189084231:android:c0925abe81d41c44",
+        "android_client_info": {
+          "package_name": "com.plai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58189084231-ta7lrh7j5iep8m9qbqsl6fsq795nfa53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzaKbknicGrMb4oSZLjJkEFA8_dGNSKE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58189084231:android:2e7949f50428bdb6",
+        "android_client_info": {
+          "package_name": "com.plai.plai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58189084231-hudm06jt4amf0nq66g0ftb3ss7cnrcbe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plai.plai",
+            "certificate_hash": "8331aeb67aaacedb16b52cd3076b04f97aa57435"
+          }
+        },
+        {
+          "client_id": "58189084231-jqboa76kt62e5j8pmr96ommtfiqqic82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plai.plai",
+            "certificate_hash": "f8fbb41cf898fab065bf25b60c4924764c99ec5f"
+          }
+        },
+        {
+          "client_id": "58189084231-ceb1gf113363h69kskqmtbh5jq9qjlu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.plai.plai",
+            "certificate_hash": "fadbaff552e724de4f15d059bca6e931d3efeed9"
+          }
+        },
+        {
+          "client_id": "58189084231-ta7lrh7j5iep8m9qbqsl6fsq795nfa53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzaKbknicGrMb4oSZLjJkEFA8_dGNSKE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58189084231-ta7lrh7j5iep8m9qbqsl6fsq795nfa53.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "58189084231-tukhkniqvktp23mhs5pbdf04tot28ld0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.plai.plai"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

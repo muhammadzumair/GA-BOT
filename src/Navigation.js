@@ -71,6 +71,10 @@ export default class Navigation extends Component {
 
 
         const InsightStack = createStackNavigator({
+            intro: {screen: Intro},
+            intro2: {screen: Intro2},
+            login: {screen: Login},
+            home: {screen: Home},
             insightStack: { screen: Insight },
             analytics: { screen: Analytics },
             moreInsights: { screen: MoreInsights },
