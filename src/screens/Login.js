@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, TouchableOpacity, ImageBackground, Image, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
 
-// import { GoogleSignin, statusCodes } from 'react-native-google-signin'
+import { GoogleSignin, statusCodes, GoogleSigninButton } from 'react-native-google-signin'
 import { googleLogin, fbLogin } from '../store/actions/authActions'
 import Button from '../components/Button';
 // import { LoginManager, AccessToken } from 'react-native-fbsdk';
@@ -11,12 +11,13 @@ class Login extends Component {
     static navigationOptions = {
         header: null
     }
-    // async componentDidMount() {
-    //     GoogleSignin.configure({
-    //         webClientId: '58189084231-ta7lrh7j5iep8m9qbqsl6fsq795nfa53.apps.googleusercontent.com',
-    //         offlineAccess: false
-    //     });
-    // }
+    async componentDidMount() {
+        GoogleSignin.configure({
+            iosClientId: '58189084231-tukhkniqvktp23mhs5pbdf04tot28ld0.apps.googleusercontent.com',
+            webClientId: '58189084231-tukhkniqvktp23mhs5pbdf04tot28ld0.apps.googleusercontent.com',
+            offlineAccess: false
+        });
+    }
 
     _fbLogin = () => {
         const goals = this.props.navigation.getParam('goals');
@@ -44,10 +45,15 @@ class Login extends Component {
 
                 {
                     this.props.loading ? <ActivityIndicator /> :
-                        <Button
-                            onPress={this._handleGoogleLogin}
-                            leftIcon={require('../assets/google_icon.png')}
-                            title="Continue with Google" />
+                        // <GoogleSigninButton
+                        //     style={{ width: 48, height: 48 }}
+                        //     size={GoogleSigninButton.Size.Icon}
+                        //     color={GoogleSigninButton.Color.Dark}
+                        //     onPress={this._handleGoogleLogin} />
+                    <Button
+                        onPress={this._handleGoogleLogin}
+                        leftIcon={require('../assets/google_icon.png')}
+                        title="Continue with Google" />
                 }
 
 

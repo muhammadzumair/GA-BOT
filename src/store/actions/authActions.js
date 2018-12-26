@@ -1,40 +1,40 @@
 import firebase from 'react-native-firebase';
 // import { LoginManager, AccessToken } from 'react-native-fbsdk';
-// import { GoogleSignin, statusCodes } from 'react-native-google-signin';
+import { GoogleSignin, statusCodes } from 'react-native-google-signin';
 import { FB_LOGIN_SUCCESS, LOGINSUCCESS, LOGINFAIL, LOG_OUT, LOADING } from './Types';
 
 import NavigationService from '../../NavigationService';
 
 export const googleLogin = (goals, platforms) => {
   return async (dispatch) => {
-    // try {
-    //   dispatch({ type: LOADING })
-    //   await GoogleSignin.hasPlayServices();
-    //   const userInfo = await GoogleSignin.signIn();
-    //   console.log(userInfo, "info")
-    //   dispatch({ type: LOGINSUCCESS, payload: { user: userInfo.user, goals, platforms } });
-    //   firebase.firestore().collection('mobileUsers').doc(userInfo.user.id).set(userInfo.user)
-    //   firebase.firestore().collection('platforms and goals').doc(userInfo.user.id).set({ goals, platforms })
-    //   NavigationService.navigate('home', { name: userInfo.user.name });
-    // }
+    try {
+      dispatch({ type: LOADING })
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      console.log(userInfo, "info")
+      dispatch({ type: LOGINSUCCESS, payload: { user: userInfo.user, goals, platforms } });
+      // firebase.firestore().collection('mobileUsers').doc(userInfo.user.id).set(userInfo.user)
+      // firebase.firestore().collection('platforms and goals').doc(userInfo.user.id).set({ goals, platforms })
+      NavigationService.navigate('home', { name: userInfo.user.name });
+    }
 
-    // catch (error) {
-    //   if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-    //     dispatch({ type: LOGINFAIL, payload: error });
-    //     console.log(error, "errorr")
-    //   }
-    //   else if (error.code === statusCodes.IN_PROGRESS) {
-    //     dispatch({ type: LOGINFAIL, payload: error });
-    //     console.log(error, "errorr")
-    //   }
-    //   else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-    //     dispatch({ type: LOGINFAIL, payload: error });
-    //     console.log(error, "errorr")
-    //   }
-    //   else {
-    //     // dispatch({ type: LOGINSUCCESS, payload: error });
-    //   }
-    // }
+    catch (error) {
+      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+        dispatch({ type: LOGINFAIL, payload: error });
+        console.log(error, "errorr")
+      }
+      else if (error.code === statusCodes.IN_PROGRESS) {
+        dispatch({ type: LOGINFAIL, payload: error });
+        console.log(error, "errorr")
+      }
+      else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+        dispatch({ type: LOGINFAIL, payload: error });
+        console.log(error, "errorr")
+      }
+      else {
+        // dispatch({ type: LOGINSUCCESS, payload: error });
+      }
+    }
   }
 }
 

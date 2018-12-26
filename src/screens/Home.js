@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
-// import { GoogleSignin } from 'react-native-google-signin'
+import { GoogleSignin } from 'react-native-google-signin'
 import { connect } from 'react-redux';
 import { signout, fbSignout } from '../store/actions/authActions';
 
@@ -9,12 +9,12 @@ class Home extends Component {
         headerTitle: `Hello, Muhammad `
     })
     // ${ navigation.getParam('name') }
-    // async componentDidMount() {
-    //     GoogleSignin.configure({
-    //         webClientId: '560135643524-ok03hg4fbpfr731qld1kkgoqjg8amnam.apps.googleusercontent.com',
-    //         offlineAccess: false,
-    //     });
-    // }
+    async componentDidMount() {
+        GoogleSignin.configure({
+            webClientId: '58189084231-tukhkniqvktp23mhs5pbdf04tot28ld0.apps.googleusercontent.com',
+            offlineAccess: false,
+        });
+    }
 
     render() {
         return (

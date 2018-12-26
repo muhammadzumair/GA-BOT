@@ -455,6 +455,34 @@ Copyright 2018 Google
    END OF TERMS AND CONDITIONS
 
 
+## Google
+
+Copyright 2015 Google Inc.
+
+## GoogleAppUtilities
+
+Copyright 2016 Google
+
+## GoogleAuthUtilities
+
+Copyright 2016 Google
+
+## GoogleInterchangeUtilities
+
+Copyright 2016 Google
+
+## GoogleNetworkingUtilities
+
+Copyright 2016 Google
+
+## GoogleSignIn
+
+Copyright 2015 Google Inc. All Rights Reserved.
+
+## GoogleSymbolUtilities
+
+Copyright 2016 Google
+
 ## GoogleToolboxForMac
 
 
@@ -660,6 +688,10 @@ Copyright 2018 Google
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
+## GoogleUtilities
+
+Copyright 2016 Google
 
 ## React
 
